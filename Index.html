@@ -8,71 +8,73 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
+    <script src="./Js/Script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__container _container">
-                <div class="header__logo logo"><img src="img/Logo/logo.svg" alt=""></div>
-                <div class="header__menu menu">
-
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">About</a>
-                        </li>
-                    </ul>
-
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Features</a>
-                        </li>
-                    </ul>
-
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">How to Use</a>
-                        </li>
-                    </ul>
-
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Download</a>
-                        </li>
-                    </ul>
-                    <div class="language">
-                        <a href="#" class="language__button"><img src="Img/Lg buttton/1.svg" alt=""></a>
-                    </div>
+                <div class="header__logo">
+                    <a href="#" class="logo">
+                        <img src="./Img/Logo/logo.svg" alt="">
+                    </a>
                 </div>
+                <div class="header__menu menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link link">About</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#features" class="menu__link">Features</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#howtouse" class="menu__link">How to Use</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#download" class="menu__link">Download</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </header>
-
         <main class="page">
             <div class="page__main-block main-block">
-                <div class="main-block__container _container">
-                    <div class="main-block__body">
+                <div class="main-block__content _container">
+                    <div class="main-block__body _container">
                         <div class="main-text__content">
                             <div class="main-block__title">Momentum</div>
                             <div class="main-block__subtitle">Launch your product — and savor the momentum.</div>
-                            <div class="main-block__button"><a href="#">Get the App</a></div>
+                            <div class="main-block__btn ">
+                                <div id="menu" class="main-block__button button">
+                                    <a href="#download">Get the App</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="main-image"><img src="img/Main/IMAGE.svg" alt=""></div>
                     </div>
                 </div>
             </div>
-            <div class="main-block__img _ibg"><img src="img/Main/Rectangle.jpg" alt=""></div>
+            <div class="main-block__img _ibg"><img src="./Img/Main/Rectangle.jpg" alt=""></div>
         </main>
-
-        <div class="intro-section">
+        <div id="about" class="intro-section">
             <div class="intro-section__text-block">
                 <div class="intro-section__text">Aenean Consectetur Porta</div>
                 <h2 class="intro-section__title">Nullam quis risus eget urna mollis ornare vel eu leo.</h2>
             </div>
             <div class="intro-section__tablet-image "><img src="img/Intro-section/Table.svg" alt=""></div>
         </div>
-
-        <div class="about__menu">
-            <div class="about__menu__content">
+        <div class="about__menu" id="features">
+            <div  class="about__menu__content">
                 <div class="about__menu__text-bloc">
                     <div class="about__menu__text">Aenean Consectetur</div>
                     <div class="about__menu__title">Cay sociis nato que penatibus et</div>  
@@ -80,7 +82,6 @@
                 </div>
                 <div class="about__menu__img"><img src="img/About menu/1.png" alt=""></div>
             </div>
-
             <div class="about__menu__content second__menu__content">
                 <div class="about__menu__img second__img"><img src="img/About menu/2.png" alt=""></div>
                 <div class="about__menu__text-bloc">
@@ -90,8 +91,6 @@
                          Suspendisse varius enim in eros elementum tristique.</div>
                 </div>
             </div>
-
-
             <div class="about__menu__content">
                 <div class="about__menu__text-bloc">
                     <div class="about__menu__text">Aenean Consectetur</div>
@@ -101,56 +100,75 @@
                 </div>
                 <div class="about__menu__img"><img src="img/About menu/3.png" alt=""></div>
             </div>
-
         </div>
-
-        <div class="feature-box _container">
-
-            <div class="feature-box__content">
-                <div class="feature-box__icone"><img src="Img/Fature-box/2.svg" alt=""></div>
-                <h2 class="feature-box__heading">Activity Notifications</h2>
-                <div class="feature-box__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
-                    varius enim in eros elementum tristique.</div>
-            </div>
-
-            <div class="feature-box__content">
-                <div class="feature-box__icone"><img src="Img/Fature-box/3.svg" alt=""></div>
-                <h2 class="feature-box__heading">Custom Timing</h2>
-                <div class="feature-box__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
-                    varius enim in eros elementum tristique.</div>
-            </div>
-
-            <div class="feature-box__content">
-                <div class="feature-box__icone"><img src="Img/Fature-box/1.svg" alt=""></div>
-                <h2 class="feature-box__heading">Mobile Optimized</h2>
-                <div class="feature-box__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
-                    varius enim in eros elementum tristique.</div>
+        <div id="howtouse" class="feature-box _container">
+            <div class="feature-box__container">
+                <div class="feature-box__content">
+                    <div class="feature-box__icone"><img src="Img/Fature-box/2.svg" alt=""></div>
+                    <h2 class="feature-box__heading">Activity Notifications</h2>
+                    <div class="feature-box__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
+                        varius enim in eros elementum tristique.</div>
+                </div>
+                <div class="feature-box__content">
+                    <div class="feature-box__icone"><img src="Img/Fature-box/3.svg" alt=""></div>
+                    <h2 class="feature-box__heading">Custom Timing</h2>
+                    <div class="feature-box__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
+                        varius enim in eros elementum tristique.</div>
+                </div>
+                <div class="feature-box__content">
+                    <div class="feature-box__icone"><img src="Img/Fature-box/1.svg" alt=""></div>
+                    <h2 class="feature-box__heading">Mobile Optimized</h2>
+                    <div class="feature-box__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
+                        varius enim in eros elementum tristique.</div>
+                </div>
             </div>
         </div>
-
-        <div class="content-text _container">
-            <div class="content-text__icone"><img src="img/content-text/1.svg" alt=""></div>
-            <h2 class="content-text__text">HeadNulla vitae elit libero, a pharetra augue.
-                 Duis mollis, est non commodo luctus, nisi erat porttitor 
-                 ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum. 
-                 Donec id elit non mi porta gravida at eget metus. Etiam porta sem 
-                 malesuada magna mollis euismod.ing</h2>
-            <div class="content-text__content">
-                <a class="nnopp">Joshua Home</a>
-                <div class="content-text__line"></div>
-                <a class="nnop">New York Times</a>
+        
+        <div class="card-slider _container">
+            <div class="card-slider__icone"><img src="img/content-text/1.svg" alt=""></div>
+            <swiper-container>
+              <swiper-slide>
+                <div class="card-slider__text">
+                  <p>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non 
+                    commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec 
+                    elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
+                    eget metus. Etiam porta sem malesuada magna mollis euismod.ing</p>
+                </div>
+                <div class="content-text__content">
+                  <a class="nnopp">Joshua Home</a>
+                  <div class="content-text__line"></div>
+                  <a class="nnop">New York Times</a>
+                </div>
+              </swiper-slide>
+          
+              <swiper-slide>
+                <div class="card-slider__text">
+                  <p>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non 
+                    commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec 
+                    elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
+                    eget metus. Etiam porta sem malesuada magna mollis euismod.ing</p>
+                </div>
+                <div class="content-text__content">
+                  <a class="nnopp">Sophia Packer</a>
+                  <div class="content-text__line"></div>
+                  <a class="nnop">New York Times</a>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          
+            <div class="slider-buttons">
+              <div class="slider-button"></div>
+              <div class="slider-button"></div>
             </div>
-        </div>
+          </div>
 
         <div class="icone__content _container">
             <img src="img/icone__content/1.svg" alt="">
         </div>
-
         <div class="img__content">
             <img src="img/Img content/IMAGE.svg" alt="">
         </div>
-
-        <div class="getStarted">
+        <div id="download" class="getStarted">
             <img src="" alt="" class="getStarted__img">
             <div class="getStarted__img-grup"></div>
             <div class="getStarted__block">
@@ -158,12 +176,19 @@
                     <h3 class="getStarted__title">Ready to get started?</h3>
                 </div>
                 <div class="getStarted__content">
-                    <button class="getStarted__button button">Download Now</button>
-                    <button class="getStarted__button second-button">Get in Touch</button>
-                </div>
+                    <button class="getStarted__button button" onclick="showErrorModal('Download Now')">Download Now</button>
+                    <button class="getStarted__button second-button button" onclick="showErrorModal('Get in Touch')">Get in Touch</button>
+                  </div>
+
+                  <div id="errorModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeErrorModal()">&times;</span>
+                      <h2 id="errorTitle"></h2>
+                      <p id="errorText"></p>
+                    </div>
+                  </div>
             </div>
         </div>
-
         <div class="updates">
             <div class="updates__content">
                 <div class="updates__text">
@@ -172,59 +197,52 @@
                 </div>
                 <div class="updates__email-content">
                     <div class="updates__email-input">
-                        <label for="email">
+                        <label for="email ">
                             <input type="email" id="email" name="email" placeholder="Enter your email">
-                          </label>
-                          
+                          </label>  
                     </div>
                     <div class="updates__email-input__button"><a href="#">Subscribe</a></div>
                 </div>
             </div>
         </div>
-
         <div class="footer footer">
             <div class="footer__content">
-                <div class="footer__logo"><img src="img/Fooret/1.svg" alt=""></div>
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="./Img/Fooret/1.svg" alt="">
+                    </a>
+                </div>
                 <div class="footer__menu"> 
-
                     <ul class="footer__menu__list">
                         <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link">Email</a>
+                            <a href="https://mail.google.com" class="footer__menu__link">Email</a>
                         </li>
                     </ul>
-
                     <ul class="footer__menu__list">
                         <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link">Instagram</a>
+                            <a href="https://www.instagram.com" class="footer__menu__link">Instagram</a>
                         </li>
                     </ul>
-
                     <ul class="footer__menu__list">
                         <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link">Facebook</a>
+                            <a href="https://www.facebook.com" class="footer__menu__link">Facebook</a>
                         </li>
                     </ul>
-
                     <ul class="footer__menu__list">
                         <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link">Twitter</a>
+                            <a href="https://twitter.com" class="footer__menu__link">Twitter</a>
                         </li>
                     </ul>
-
                     <ul class="footer__menu__list">
                         <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link">Image License Info</a>
+                            <a href="https://www.google.com" class="footer__menu__link">Image License Info</a>
                         </li>
                     </ul>
-
                     <ul class="footer__menu__list">
                         <li class="footer__menu__item">
-                            <a href="#" class="footer__menu__link">Powered by Webflow</a>
+                            <a href="https://www.instagram.com/den_karpyshyn" class="footer__menu__link">The author of this site</a>
                         </li>
                     </ul>
-    
-
-
                 </div>
             </div>
         </div>
