@@ -452,7 +452,7 @@ h1,h2,h3,h4,h5,h6 {
 /*getStarted===============================================*/
 
 .getStarted {
-    background-image: url(img/GetStarted/1.jpg);
+    background-image: url(./Img/GetStarted/1.jpg);
     height: 474px;
     background-repeat: no-repeat;
     background-size: cover;
